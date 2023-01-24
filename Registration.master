@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Registration.master.cs" Inherits="Registration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>NutriNet</title>
+<link rel="icon" href="assets/favicon.png" type="image/png"/>
+<script type="text/jscript" src="assets/jquery-1.8.3.min.js"></script>
+<script src="assets/datePicker_bootstrap-datepicker.js" type="text/jscript"></script>
+<link rel="stylesheet" href="assets/datePicker_bootstrap-datepicker.css" type="text/css" />
+<script type="text/jscript" src="bootstrap/js/bootstrap.min.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />  
+<link href="assets/StyleSheet.css" rel="stylesheet" />  
+<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body class="rgbg">
+    <form id="mainForm" runat="server">
+    <div class="container-fluid px-0">
+        <div class="navbar navbar-expand-lg bg-dark">
+            <ul class="navbar-nav m-2 ms-auto">
+            <li class="nav-item mx-2">
+                    <a href="UserRegistration.aspx?pg=ur" class="nav-link px-3 r-custom" <%=_u %>>User-Sign Up</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ms-auto r-login">
+                <li class="nav-item navbar-custom pe-2">
+                    <a href="Login.aspx" class="nav-link px-3 rounded-pill text-white" title="Login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content-wrap"> 
+        <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

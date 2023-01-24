@@ -1,0 +1,142 @@
+﻿body 
+{
+    margin: 0;
+    font-size: .8rem;
+}
+
+.fs-normal
+{
+    font-size: .8rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.navbar-custom a
+{
+    background:#469feb;
+    /*background-color:#0275d8;*/   
+}
+
+.r-login a 
+{
+    background:#294d96;
+}
+
+.e-logout a
+{
+    background:#4F37D1;    
+}
+.a-logout a
+{
+    background:#DD272A;
+}
+.navbar-brand 
+{
+    color:White;    
+}
+.nav-item a
+{
+    /*border-radius:2em;*/
+    color:white;    
+}
+
+.u-update {border-bottom: 2px solid transparent;}
+
+.u-update:hover {border-bottom: 2px solid #469feb;}
+
+.e-update {border-bottom: 2px solid transparent;}
+
+.e-update:hover {border-bottom: 2px solid #4F37D1;}
+
+.r-custom {border-bottom: 2px solid transparent;}
+.u-custom {border-bottom: 2px solid transparent;}
+.e-custom {border-bottom: 2px solid transparent;}
+.a-custom {border-bottom: 2px solid transparent;}
+
+.r-custom:hover
+{
+    border-bottom: 2px solid #294d96;
+    color:White;
+}
+.u-custom:hover
+{
+    border-bottom: 2px solid #469feb;
+    color:White;
+}
+.e-custom:hover
+{
+    border-bottom: 2px solid #4F37D1;
+    color:White;
+}
+.a-custom:hover
+{
+    border-bottom: 2px solid #DD272A;
+    color:White;
+}
+
+.bg
+{
+    background-color:#469feb;
+}
+
+.rgbg 
+{
+    background : #294d96; 
+}
+/*.backGround
+{
+    padding: 1em;
+    background-color:#f2f2f2;
+    background-image:url('assets/bg-img.jpg');
+}*/
+
+.nav-item
+{
+    font-family:Century Gothic;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+    background:rgba(2, 117, 216,0.2); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.output
+{
+    font-family:Century Gothic;
+}
+
+.titlecustom 
+{
+    letter-spacing:5px;    
+}
+
+.box-shadow { box-shadow: 1px 1px 6px 1px #ebebeb; }
+
+.lp-custom:hover 
+{   
+    background:white;
+    color:Black;
+}
+
+.text-none a{text-decoration:none;}
+.new-box-shadow {box-shadow: 1px 1px 15px 1px rgba(255,255,255,0.5);}
+.transparent {background-color:transparent;}
+.bg-opacity { background-color: rgba(255,255,255,0.5); }

@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="UserMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NutriNet</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png"/>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mainForm" runat="server">
+    <div class="container-fluid p-0">
+        <div class="navbar navbar-expand-lg bg-dark">
+            <ul class="navbar-nav m-2 me-auto">
+                <li class="nav-item mx-2">
+                    <asp:Image ID="ImgLogo" runat="server" ImageUrl="~/assets/favicon.png" Height="30px" Width="30px" class="fs-2 fw-light" AlternateText="Home" />
+                </li>
+                <li class="nav-item mx-2 me-3">
+                    <a title="Edit Profile" href="UserEdit.aspx?pg=ue" class="nav-link px-3 u-update" <%=_ue %>><span class="text-white"> Hi, </span><asp:Label class="text-white" ID="lblUsr" runat="server" Text="" /></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav m-2">
+                <li class="nav-item mx-2">
+                        <a href="UserView.aspx?pg=uv" class="nav-link px-3 u-custom" <%=_uv %>>Status</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="HealthTracking.aspx?pg=ht" class="nav-link px-3 u-custom" <%=_ht %>>Update Health</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="BMI.aspx?pg=bmi" class="nav-link px-3 u-custom" <%=_bmi %>>BMI</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="BMR.aspx?pg=bmr" class="nav-link px-3 u-custom" <%=_bmr %>>BMR</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="ViewMealPlan.aspx?pg=mp" class="nav-link px-3 u-custom" <%=_mp %>>Meal</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="ViewExcercise.aspx?pg=ep" class="nav-link px-3 u-custom" <%=_ep %>>Exercise</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="CalorieTracker.aspx?pg=ct" class="nav-link px-3 u-custom" <%=_ct %>>Calories</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="ReqAppointment.aspx?pg=a" class="nav-link px-4 u-custom" <%=_a %>>Appointment</a>
+                </li>
+                <li class="nav-item mx-2">
+                        <a href="ContactExpert.aspx?pg=c" class="nav-link px-4 u-custom" <%=_c %>>Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto d-flex">
+                <li class="nav-item navbar-custom pe-2">
+                    <asp:LinkButton ID="btnLogOut" runat="server" onclick="btnLogOut_Click" class="nav-link px-3 rounded-pill text-white" ValidationGroup="ValGpLOutUsr">Logout</asp:LinkButton>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content-wrap">
+        <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

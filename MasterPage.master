@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NutriNet</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/StyleSheet.css" rel="stylesheet" />
+    <script type="text/jscript" src="assets/jquery-1.8.3.min.js"></script>
+    <script src="assets/datePicker_bootstrap-datepicker.js" type="text/jscript"></script>
+    <link rel="stylesheet" href="assets/datePicker_bootstrap-datepicker.css" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image:url('assets/bg-img.jpg');">
+    <form id="mainForm" runat="server">
+     <div class="navbar navbar-expand-lg">
+            <ul class="navbar-nav m-2 me-auto">
+                <li class="nav-item mx-2 text-none">
+                    <asp:LinkButton ID="btnHome" runat="server" onclick="btnHome_Click">
+                        <asp:Image ID="ImgLogo" runat="server" ImageUrl="~/assets/favicon.png" Height="40px" Width="30px" class="fs-2 fw-light" AlternateText="Home" />
+                        <span class="fs-5 text-white">NUTRINET</span>
+                    </asp:LinkButton>
+                </li>
+            </ul>
+            <ul class="navbar-nav m-2">
+                <li class="nav-item mx-2 me-3">
+                    <span class="nav-link text-light">Phone No : 01234567890</span>
+                </li>
+                <li class="nav-item mx-2 me-3">
+                    <span class="nav-link text-light">Email Address : vcare@nutrinet.com</span>
+                </li>
+            </ul>
+            <ul class="navbar-nav m-2 ms-auto">
+                <li class="nav-item mx-2 me-3">
+                    <asp:LinkButton ID="btnLogIn" runat="server" onclick="btnLogIn_Click" class="nav-link px-3 border border-light lp-custom">Login</asp:LinkButton>
+                    <%--<a href="Login.aspx" Id="login" runat="server" class="nav-link px-3 border border-light lp-custom">Login</a>--%>
+                </li>
+            </ul>
+        </div>
+        <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
