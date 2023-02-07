@@ -23,5 +23,3 @@ Website that helps to monitor and control simple diet and excercise plans of reg
 ![NutriNet13](https://user-images.githubusercontent.com/76850547/214468901-7b201166-617f-4e55-a6ec-c2dcd8ba96ee.png)
 
 ![NutriNet19](https://user-images.githubusercontent.com/76850547/214468927-0ed345c0-860c-49b8-b358-0f867402ea13.png)
-
-
